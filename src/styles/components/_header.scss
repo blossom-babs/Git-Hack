@@ -1,0 +1,18 @@
+header {
+  @include reset-list;
+
+  .header {
+    display: table;
+    margin: 0 auto;
+
+    &__icon {
+      height: 100px;
+      width: 100px;
+      fill: $secondaryColor;
+    }
+
+    &__title {
+      text-align: left;
+    }
+  }
+}

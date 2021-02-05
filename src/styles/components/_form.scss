@@ -1,0 +1,33 @@
+.form {
+  display: table;
+  margin: 0 auto;
+
+
+  width: fit-content;
+
+  &__children {
+
+    color: $white;
+    font-size: larger;
+
+    background: $thirdColor;
+    border: 1px solid $thirdColor;
+  }
+
+  &__item {
+    height: 40px;
+    width: 20rem;
+
+    padding-left: 1rem;
+
+  }
+
+  &__btn {
+    height: 43px;
+    width: 5rem;
+
+    padding-right: 1rem;
+
+    cursor: pointer;
+  }
+}

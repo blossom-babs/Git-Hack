@@ -1,0 +1,10 @@
+.footer {
+  @include reset-list;
+  text-transform: capitalize;
+
+  a {
+    cursor: pointer;
+    color: $secondaryColor;
+    line-height: 1.5em;
+  }
+}

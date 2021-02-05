@@ -1,3 +1,12 @@
 //CORE
 @import './core/variables';
 @import './core/overwrite';
+@import './core/typography';
+
+//components
+@import './components/header';
+@import './components/form';
+@import './components/card';
+@import './components/title';
+@import './components/data';
+@import './components/footer';

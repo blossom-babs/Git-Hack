@@ -1,0 +1,92 @@
+.card {
+
+  @include reset-list;
+
+  // display: table;
+  // margin: 0 auto;
+
+  &__avatar {
+
+    @include table-display;
+    border-radius: 50%;
+    border: 10px solid $secondaryColor;
+    height: 200px;
+
+  }
+
+  &__children {
+    @include table-display;
+
+  }
+
+  &__name {
+    padding: 2rem 0 1rem 0;
+    text-transform: capitalize;
+  }
+
+  &__login {
+    color: $secondaryColor;
+  }
+
+  &__bio {
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+
+  &__flex {
+
+    // larger screen
+    @media screen and (min-width: 768px) {
+      //display: flex;
+      // align-items: center;
+      // height: fit-content;
+      //justify-content: center;
+
+
+      // justify-content: center;
+      // column-gap: 1rem;
+
+
+    }
+
+    div {
+      color: darken($white, 15);
+      display: table;
+      margin: 0 auto;
+      padding: .5rem;
+    }
+
+    &--content {
+      padding-left: .5rem;
+    }
+
+  }
+
+  &__details {
+    justify-content: center;
+    justify-content: space-evenly;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      column-gap: 1rem;
+    }
+
+    padding-top: 2rem;
+
+    div {
+      background: $thirdColor;
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    &--content {
+      display: block;
+      padding-top: 1rem;
+
+    }
+  }
+}

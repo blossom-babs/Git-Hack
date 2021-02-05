@@ -1,4 +1,25 @@
-
 // COLORS
-$darkColor: #282c34;
-$secondaryColors:#61DAFB;
+$darkColor: #1A1E22;
+$secondaryColor:#0070F3;
+$thirdColor:#26303C;
+$white: #ffffff;
+
+// LAYOUTS
+@mixin reset-list {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 90%;
+
+}
+
+@mixin table-display {
+  display: table;
+  margin: 0 auto;
+
+}
+
+html,
+body {
+  background: $darkColor;
+  color: $white;
+}
