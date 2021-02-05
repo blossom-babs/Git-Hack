@@ -5,7 +5,6 @@ Integrated with [Github Api](https://api.github.com/), this app allows you to se
 <img src="/src/assets/screenshot.png"
      alt="Project preview"
     />
-
 ## Development Setup
 
 - Clone the project to your local computer.
@@ -32,3 +31,7 @@ In the project directory, you can run:
 - [Node-Sass](https://www.npmjs.com/package/node-sass)
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
+
+## Live project 
+
+[GitHack](https://githack.netlify.app/)
