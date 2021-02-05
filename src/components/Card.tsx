@@ -38,9 +38,7 @@ export const Card: React.FC<CardProps> = ({
         </div>
         <div>
           <CalendarTodayIcon />
-          <span className="card__flex--content">
-            {created_at?.substring(0, 10).toString()}
-          </span>
+          <span className="card__flex--content">{created_at}</span>
         </div>
       </div>
       <div className="flex card__details">

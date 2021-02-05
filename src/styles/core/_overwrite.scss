@@ -8,6 +8,6 @@ body {
   display: flex;
 }
 
-// .afterthought {
-  //   color: white;
-  // }
+.repos__name {
+  @include reset-list;
+}

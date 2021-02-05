@@ -19,7 +19,29 @@ export const App: React.FC<HomeComponent> = () => {
   const getUserData = (profileData: { [key: string]: any }) => {
     setProfile(profileData[0]);
     setRepos(profileData[1]);
-    //console.log(profileData[1]);
+    console.log(profileData[0].created_at);
+  };
+
+  const formatDate = (date: string) => {
+    let months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    let dateArr = date.substring(0, 10).split("-");
+
+    let themonths = months[Number(dateArr[1]) - 1];
+
+    return `${themonths} ${dateArr[2]}, ${dateArr[0]}`;
   };
 
   return (
@@ -35,13 +57,14 @@ export const App: React.FC<HomeComponent> = () => {
           username={profile.name}
           userlogin={profile.login}
           repos={profile.public_repos}
-          created_at={profile.created_at}
+          created_at={formatDate(profile.created_at.toString())}
           location={profile.location}
         />
       ) : (
         <Title title="User Not Found" />
       )}
-      <h1>Top Repos</h1>
+      {repos !== undefined && <h1 className="repos__name">Top Repos</h1>}
+
       <div className="data">
         {repos !== undefined &&
           repos
