@@ -1,8 +1,8 @@
 import React from "react";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
+// import StarBorderIcon from "@material-ui/icons/StarBorder";
 import LinkSharpIcon from "@material-ui/icons/LinkSharp";
-import FiberManualRecordOutlinedIcon from "@material-ui/icons/FiberManualRecordOutlined";
+//import FiberManualRecordOutlinedIcon from "@material-ui/icons/FiberManualRecordOutlined";
 interface DataProps {
   name?: string;
   language?: string;
