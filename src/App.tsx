@@ -85,7 +85,6 @@ export const App: React.FC<HomeComponent> = () => {
                 )
             )}{" "}
       </div>
-      <Footer />
     </>
   );
 };
