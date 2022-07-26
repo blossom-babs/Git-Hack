@@ -4,11 +4,7 @@
 }
 
 .card {
-
   @include reset-list;
-
-  // display: table;
-  // margin: 0 auto;
 
   &__avatar {
 
@@ -69,15 +65,18 @@
   }
 
   &__details {
-    justify-content: center;
     justify-content: space-evenly;
+    padding-top: 2rem;
+    gap: 1rem;
 
     @media (min-width: 768px) {
       justify-content: center;
-      column-gap: 1rem;
     }
 
-    padding-top: 2rem;
+    @media screen and (max-width:500px) {
+      flex-direction: column;
+    }
+
 
     div {
       background: $thirdColor;

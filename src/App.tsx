@@ -8,6 +8,7 @@ import { Card } from './components/Card';
 import { Data } from './components/Data';
 import { Title } from './components/Title';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 interface HomeComponent {}
 
@@ -16,6 +17,7 @@ export const App: React.FC<HomeComponent> = () => {
 	const [repos, setRepos] = useState<{ [key: string]: any }>();
 
 	const getUserData = (profileData: { [key: string]: any }) => {
+    console.log(profileData)
 		setProfile(profileData[0]);
 		setRepos(profileData[1]);
 	};
@@ -59,9 +61,9 @@ export const App: React.FC<HomeComponent> = () => {
 					location={profile.location}
 				/>
 			) : (
-				<Title title="User Not Found" />
+				<Title title="Find a Github user" />
 			)}
-			{repos !== undefined && <h1 className="repos__name">Some Repos</h1>}
+			{repos !== undefined && <h1 className="repos__name">Top Repos</h1>}
 
 			<div className="data">
 				{repos !== undefined &&
@@ -83,6 +85,8 @@ export const App: React.FC<HomeComponent> = () => {
 								)
 						)}{' '}
 			</div>
+
+      <Footer/>
 		</div>
 	);
 };

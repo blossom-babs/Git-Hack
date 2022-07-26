@@ -1,6 +1,15 @@
-.footer {
-  @include reset-list;
+footer {
   text-transform: capitalize;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+}
+
+.footer {
 
   a {
     cursor: pointer;

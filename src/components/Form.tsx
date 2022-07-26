@@ -38,7 +38,7 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
 					className="form__item form__children"
 					type="text"
 					onChange={handleChange}
-					placeholder="Find a Github user e.g blossom-babs"
+					placeholder="Type username e.g blossom-babs"
 					value={userInput}
 				/>
 				<button className="form__btn form__children">Search</button>
