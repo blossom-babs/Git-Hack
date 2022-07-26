@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 Footer.tsx
+
+/cypress/e2e/2-advanced-examples/

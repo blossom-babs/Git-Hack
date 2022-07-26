@@ -16,9 +16,12 @@
 
   &__item {
     height: 40px;
-    width: 20rem;
-
     padding-left: 1rem;
+    
+    @media screen and (min-width: 768px){
+      width: 20rem;
+      
+    }
 
   }
 
