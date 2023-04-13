@@ -9,6 +9,7 @@ import { Data } from './components/Data';
 import { Title } from './components/Title';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import Quote from './components/Quote';
 
 interface HomeComponent {}
 
@@ -46,6 +47,7 @@ export const App: React.FC<HomeComponent> = () => {
 
 	return (
 		<div className='main__div'>
+			<Quote/>
 			<Header />
 			<Form onSubmit={getUserData} />
 			{profile !== undefined ? (

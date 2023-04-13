@@ -27,9 +27,16 @@ export const Card: React.FC<CardProps> = ({
 }) => {
 	return (
 		<div className="card">
-			<img data-cy='userAvatar' className="card__avatar" src={src} alt={username} />
+			<img
+				data-cy="userAvatar"
+				className="card__avatar"
+				src={src}
+				alt={username}
+			/>
 			<h1 className="card__name card__children">{username}</h1>
-			<p data-cy="userLogin" className="card__login card__children">@{userlogin}</p>
+			<p data-cy="userLogin" className="card__login card__children">
+				@{userlogin}
+			</p>
 			<p className="card__bio card__children">{bio}</p>
 			<div className="card__flex">
 				<div>
@@ -43,8 +50,8 @@ export const Card: React.FC<CardProps> = ({
 			</div>
 			<div className="flex card__details">
 				<div>
+					<span className="gt"></span>followers
 					{followers}
-					<span className="card__details--content"></span>followers
 				</div>
 				<div>
 					{following} <span className="card__details--content"></span>following

@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "comp-test": "cypress open --component",
-    "e2e-test": "cypress open"
+    "e2e-test": "cypress open",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,7 @@
   },
   "devDependencies": {
     "@types/isomorphic-fetch": "0.0.35",
-    "cypress": "^10.3.1"
+    "cypress": "^10.3.1",
+    "msw": "^1.2.1"
   }
 }
