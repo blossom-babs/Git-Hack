@@ -8,7 +8,7 @@ afterEach(cleanup)
 
 it('fetches and displays data', async () => {
    axiosMock.get.mockResolvedValueOnce({data: {
-    content: 'What is dead may never die'
+    content: 'What is dead may never di'
    }})
 
   const { } = render(<Quote />)
